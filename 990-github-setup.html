@@ -387,7 +387,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -403,6 +405,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-of-a-repository">Creation of a repository</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -414,6 +424,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="github-setup">
 <h1>GitHub Setup<a class="headerlink" href="#github-setup" title="Link to this heading">#</a></h1>
+<section id="creation-of-a-repository">
+<h2>Creation of a repository<a class="headerlink" href="#creation-of-a-repository" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>On your GitHub main page (e.g. “<a class="github reference external" href="https://github.com/pelmer/">pelmer/</a>” rather than “<a class="github reference external" href="https://github.com/"></a>”), click on the “Repositories” link at the top of the page::</p></li>
 </ul>
@@ -423,7 +435,7 @@ document.write(`
 </ul>
 <p><img alt="GitHub 1" src="_images/github-1.png" /></p>
 <ul class="simple">
-<li><p>Fill in a repository name in the form NNN-hsf-india-202509-XXXXXX, where NNN is your number for the separate spreadsheet (zero-padded to 3 digits) and XXXXX is your github repo.</p></li>
+<li><p>Fill in a repository name in the form NNN-hsf-india-202509-XXXXXX, where NNN is your student number provided in email (zero-padded to 3 digits) and XXXXX is your github username.</p></li>
 <li><p>Choose a “Private” repo.</p></li>
 <li><p>Do not add a README, .gitignore or license file for now.</p></li>
 <li><p>Hit “Create Repository”.</p></li>
@@ -437,34 +449,39 @@ document.write(`
 <li><p>Add the github usernames as directed in the workshop session.</p></li>
 </ul>
 <p><img alt="GitHub 1" src="_images/github-4.png" /></p>
-<ul class="simple">
-<li><p>On your main GitHub page, click on your icon or photo in the upper right hand corner:</p></li>
-</ul>
-<p><img alt="GitHub 1" src="_images/github-5.png" /></p>
-<ul class="simple">
-<li><p>Select “Settings”:</p></li>
-</ul>
-<p><img alt="GitHub 1" src="_images/github-6.png" /></p>
-<ul class="simple">
-<li><p>Select “Developer Seetings” at the very bottom:</p></li>
-</ul>
-<p><img alt="GitHub 1" src="_images/github-7.png" /></p>
-<ul class="simple">
-<li><p>Click on “Personal Access Tokens” and it should open additional options. Choose “Fine-grained tokens”:</p></li>
-</ul>
-<p><img alt="GitHub 1" src="_images/github-8.png" /></p>
-<ul class="simple">
-<li><p>Click on “Generate new token”:</p></li>
-</ul>
-<p><img alt="GitHub 1" src="_images/github-9.png" /></p>
-<ul class="simple">
-<li><p>On the following page, choose “Only select repositories” and select the repository you just created. At the bottom of the page, choose “Commit statuses” and “Contents” and change both to “Access: Read and Write”. Hit “Generate Token” at the bottom.</p></li>
-</ul>
-<p><img alt="GitHub 1" src="_images/github-10.png" /></p>
-<ul class="simple">
-<li><p>On the following page you will see the generated token. Copy that somewhere on your laptop as you will need to use it later to clone your repo:</p></li>
-</ul>
-<p><img alt="GitHub 1" src="_images/github-11.png" /></p>
+<!--
+## Allowing command line write access
+
+  * On your main GitHub page, click on your icon or photo in the upper right hand corner:
+
+![GitHub 1](assets/github-5.png)
+
+  *  Select "Settings":
+
+![GitHub 1](assets/github-6.png)
+
+  * Select "Developer Seetings" at the very bottom:
+
+![GitHub 1](assets/github-7.png)
+
+  * Click on "Personal Access Tokens" and it should open additional options. Choose "Fine-grained tokens":
+
+![GitHub 1](assets/github-8.png)
+
+  * Click on "Generate new token":
+
+![GitHub 1](assets/github-9.png)
+
+  * On the following page, choose "Only select repositories" and select the repository you just created. At the bottom of the page, choose "Commit statuses" and "Contents" and change both to "Access: Read and Write". Hit "Generate Token" at the bottom.
+
+![GitHub 1](assets/github-10.png)
+
+  * On the following page you will see the generated token. Copy that somewhere on your laptop as you will need to use it later to clone your repo:
+
+![GitHub 1](assets/github-11.png)
+
+-->
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -521,6 +538,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-of-a-repository">Creation of a repository</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
